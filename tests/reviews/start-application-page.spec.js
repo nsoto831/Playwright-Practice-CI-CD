@@ -11,12 +11,8 @@ test.describe("Start Application Page @smoke", () => {
   test("Clicking the Terms & Conditions link opens a new Terms & Conditions tab", async ({page}) => {
     let popupEvent = page.waitForEvent("popup");
 
-    await page.waitForTimeout(2000);
-
     let termsLink = page.getByRole("link", { name: "Terms and conditions" });
     await termsLink.click();
-
-    await page.waitForTimeout(2000);
 
     let termsPage = await popupEvent;
 

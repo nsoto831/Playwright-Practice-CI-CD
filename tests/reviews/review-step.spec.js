@@ -52,7 +52,7 @@ test("Payment input fields are enabled and accept card details", async ({ page }
     await expect(cvcInput).toHaveValue(cvc);
     await expect(zipCodeInput).toHaveValue(zipCode);
 
-    await page.waitForTimeout(5000);
+    //await page.waitForTimeout(5000);
 });
 
 });

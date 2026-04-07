@@ -38,7 +38,7 @@ export default defineConfig({
     screenshot: "only-on-failure",
     // video: "retain-on-failure",
     video: { mode: "retain-on-failure", size: { width: 1880, height: 1080 } },
-    headless: false,
+    headless: true,
   },
 
   /* Configure projects for major browsers */
