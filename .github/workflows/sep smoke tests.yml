@@ -48,7 +48,7 @@ jobs:
 
       # By default tests run in headless mode (without a GUI) unless specified otherwise in 'run' configuration where you can pass the '--headed' flag to run tests with a visible browser window
       - name: Run Playwright tests
-        run: npm run tests:run tests with tag
+        run: npm run "tests:run tests with tag"
 
       # Upload test results and reports
       - name: Upload Playwright test results
