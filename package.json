@@ -1,0 +1,30 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests:run all": "npx playwright test",
+    "test:run headed": "npx playwright test --headed",
+    "tests:run specific test file": "npx playwright test --grep assertions-into.spec.js",
+    "tests:run specific test inside file": "npx playwright test tests/reviews/start-application-page.spec.js --grep 'first stepper is blue initially and changes to green once Step 1 is completed'",
+    "tests:run tests with tag": "npx playwright test --grep @env-variables",
+    "open codegen": "npx playwright codegen https://the-internet-5chk.onrender.com",
+    "open test in debug inspector": "npx playwright test --debug",
+    "debug specific test in debug inspector": "npx playwright test -g \"Window Pop-ups practice\" --debug",
+    "open report": "npx playwright show-report",
+    "pw:update": "npm install -D @playwright/test@latest && npx playwright install",
+    "pw:version": "npx playwright --version"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
+    "dotenv": "^17.3.1",
+    "otp": "^2.0.1"
+  }
+}
