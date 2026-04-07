@@ -2,7 +2,7 @@ import { test,expect } from '@playwright/test';
 import { CommonUI } from './common-ui';
 import { faker } from '@faker-js/faker';
 
-test.describe('', () => {
+test.describe('Review Step Page @smoke', () => {
     test.beforeEach(async ({ page }) => {
         await CommonUI.login(page);
         await CommonUI.completeStartApplicationStep(

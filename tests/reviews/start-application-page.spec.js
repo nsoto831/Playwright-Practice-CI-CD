@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 import { CommonUI } from "./common-ui";
 import { faker } from "@faker-js/faker";
 
-test.describe("Start Application Page @sep01", () => {
+test.describe("Start Application Page @smoke", () => {
   test.beforeEach(async ({ page }) => {
     await CommonUI.login(page);
     

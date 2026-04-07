@@ -8,7 +8,7 @@
     "test:run headed": "npx playwright test --headed",
     "tests:run specific test file": "npx playwright test --grep assertions-into.spec.js",
     "tests:run specific test inside file": "npx playwright test tests/reviews/start-application-page.spec.js --grep 'first stepper is blue initially and changes to green once Step 1 is completed'",
-    "tests:run tests with tag": "npx playwright test --grep @env-variables",
+    "tests:run tests with tag": "npx playwright test --grep @smoke",
     "open codegen": "npx playwright codegen https://the-internet-5chk.onrender.com",
     "open test in debug inspector": "npx playwright test --debug",
     "debug specific test in debug inspector": "npx playwright test -g \"Window Pop-ups practice\" --debug",
